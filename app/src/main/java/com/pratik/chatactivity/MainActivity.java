@@ -54,8 +54,7 @@ public class MainActivity extends AppCompatActivity {
 
         //setting tag
         List<String> tags = new ArrayList<>();
-        tags.add("public");
-        tags.add("course-paid-user");
+        tags.add("user");
 
         final ConversationOptions convOptions = new ConversationOptions()
                 .filterByTags(tags, "Message Us");
