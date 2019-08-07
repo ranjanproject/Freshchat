@@ -32,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         //configuring freshchat
-        FreshchatConfig freshchatConfig = new FreshchatConfig("416d7ac0-fb45-4a00-86d8-cb1dabe13fcc", "2b841d5b-3655-44a7-960f-a70591f430ff");
+        FreshchatConfig freshchatConfig = new FreshchatConfig("70d9aedc-435d-46f5-b504-081c72ae5df2", "cdac2ad1-4aaa-433c-8ea0-60b557f202c0");
         Freshchat.getInstance(getApplicationContext()).init(freshchatConfig);
 
         //setting user
@@ -96,7 +96,7 @@ public class MainActivity extends AppCompatActivity {
                 public void onResult(FreshchatCallbackStatus freshchatCallbackStatus, int unreadCount) {
                     //Assuming "badgeTextView" is a text view to show the count on
 //                    badgeTextView.setText(Integer.toString(unreadCount));
-                    Toast.makeText(getApplicationContext(),Integer.toString(unreadCount),Toast.LENGTH_LONG).show();
+                    Toast.makeText(getApplicationContext(),Integer.toString(unreadCount),Toast.LENGTH_SHORT).show();
                 }
             });
         }
